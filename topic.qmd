@@ -1,6 +1,5 @@
-# Topic
+# Univariate Extreme Value Theory
 
-Pick some subset of the information covered in your annual review article that you are interested in exploring in more detail. 
-
-Identify the scope of your user guide - what will you cover? Specific software packages? When to use or not to use a specific technique?
-
+Univariate extreme value theory, UEVT as we will call it, is all about measuring and identifying the extreme tails of data. In the context of my article, *Statistical Methods for Extreme Event Attribution in Climate Science*, UEVT focuses on weather events like record high temperatures or huge floods. The univariate part means that the focus is on one variable of an event like rainfall in a hurricane.\
+\
+There are two approaches to UEVT, block maxima and peaks over threshold. Block maxima splits the data into blocks, like a time frame. Next a generalized extreme value distribution is fit. From there the shape of the distribution can tell you the amount of extreme values or how often they occur. Peaks over threshold does not split the data into blocks and rather just picks a threshold to cross to determine if a value is extreme.
