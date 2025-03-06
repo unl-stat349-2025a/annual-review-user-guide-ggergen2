@@ -2,8 +2,12 @@
 
 What does someone trying to accomplish your chosen task need help with? 
 
-What parts are likely to be tricky? 
+Using R packages that might be new. Analyzing q-q or residual plots for goodness of fit test. Drawing conclusions from the GEV.
+
+What parts are likely to be tricky?
+
+Interpreting the shape of the GEV. Overall analyzation of results. 
 
 What resources are already available on this topic that may be helpful? Look for e.g. software vignettes, package documentation, papers about software packages, and so on.
 
-
+Package documentation on ismev and evd for using GEV. There is a book on Extreme Value Theory that my original paper references but it would need to be bought. 

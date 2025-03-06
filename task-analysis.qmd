@@ -5,19 +5,34 @@ Here are some questions to guide you through the process of doing a task analysi
 
 What are the prerequisites, for both knowledge and e.g. software setup? 
 
+Need a basic understanding of statistics and probabilities. Also need to be familiar with R and plotting with ggplot or another visual library. Need to install the evd and ismev packages on R.
+
 What are the basic requirements for any data that the method is used on? 
-  - Are missing values allowed? 
-  - Should the data be confined within a certain range? 
+  - Are missing values allowed?
+  
+  It would be ideal to remove missing values. 
+  
+  - Should the data be confined within a certain range?
+  
+  If anything the data should absolutely not be trimmed in anyway since we are after the extreme values.
+  
   - Does the data have to be approximately normally distributed? 
+  
+  No, it does not.
 
 What are the basic components of the task?
   - Outline these in a bit more detail
 
+A data set that records the time or date of the target variable is necessary. You first need to identify the relevant variable. Next you need to clean the data if needed. First step in the analysis is to choose the block size that you will take out of the date column. This could be years, months, etc. Then record the maxima or highest value within each block. Next fit a Generalized Extreme Value. From this use a q-q plot or residual plot to assess goodness of fit.
+
 
 What decisions does the user need to be prepared to make on the fly?
 
+The blocks may need to be adjusted based on how the q-q plot and residual plot come back.
+
 What questions should the user ask of the "first draft" of the product? What adjustments may need to be made?
 
+If there are no extreme values for some blocks then the user may need to readjust the block size. 
 
 ## Additional Guidance 
 
